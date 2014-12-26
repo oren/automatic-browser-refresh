@@ -1,0 +1,22 @@
+{
+  "name": "automatic-browser-refresh",
+  "version": "1.0.0",
+  "description": "Template website for refreshing the browser on file change",
+  "main": "index.js",
+  "scripts": {
+    "livereload": "live-reload --port 4000 static/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oren/automatic-browser-refresh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oren/automatic-browser-refresh/issues"
+  },
+  "homepage": "https://github.com/oren/automatic-browser-refresh",
+  "devDependencies": {
+    "live-reload": "^0.2.0"
+  }
+}

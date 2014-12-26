@@ -9,13 +9,16 @@ Template website for refreshing the browser on file change
 
 ## install
 
-    sudo npm install -g node-live-reload
     git clone git@github.com:oren/automatic-browser-refresh.git
     cd automatic-browser-refresh
+    npm install
 
 ## Run
 
-    go run server.go                         # run the webserver (assumes go installed)
-    node-live-reload -d . -d static          # watch current dir and static dir
-    modify the html/css/js file and notice the automatic browser refresh
+    go build && ./automatic-browser-refresh  # run the webserver (assumes go installed)
+    npm run livereload                       # watch changes in static dir
+    modify any file in the static folder and notice the automatic browser refresh
 
+## How does it work?
+
+It uses [live-reload](https://github.com/Raynos/live-reload) npm module that is doing the watching and the browser refresh - `live-reload --port 4000 static/`
